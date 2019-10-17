@@ -55,7 +55,7 @@ public class GeofirePlugin implements MethodCallHandler, EventChannel.StreamHand
 
         if (call.method.equals("GeoFire.start")) {
 
-            if (call.argument("url").toString().isNotEmpty()) {
+            if (!call.argument("url").toString().isEmpty()) {
                 databaseReference = FirebaseDatabase.getInstance(call.argument("url").toString()).getReference(call.argument("path").toString());
             } else {
                 databaseReference = FirebaseDatabase.getInstance().getReference(call.argument("path").toString());
