@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_geofire'
-  s.version          = '1.0.2'
+  s.version          = '2.0.0'
   s.summary          = 'A Flutter plugin to get the realtime updates of places nearby.'
   s.description      = <<-DESC
 A Flutter plugin to get the realtime updates of places nearby.
@@ -16,9 +16,8 @@ A Flutter plugin to get the realtime updates of places nearby.
   s.public_header_files = 'Classes/**/*.h'
   s.ios.deployment_target = '8.0'
   s.dependency 'Flutter'
-  s.ios.dependency 'GeoFire', '~> 3.0'
+  s.ios.dependency 'GeoFire', '~> 3.0.0'
+  s.static_framework = true
 #  s.ios.dependency 'Firebase/Database'
 #  s.ios.dependency 'Firebase'
-  s.static_framework = true
-
 end

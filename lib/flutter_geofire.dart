@@ -14,9 +14,12 @@ class Geofire {
 
   static Stream<dynamic> _queryAtLocation;
 
-  static Future<bool> initialize(String url, String path) async {
-    final dynamic r = await _channel
-        .invokeMethod('GeoFire.start', <String, dynamic>{"url": url, "path": path});
+  static Future<bool> initialize({
+    String url,
+    String path,
+  }) async {
+    final dynamic r = await _channel.invokeMethod(
+        'GeoFire.start', <String, dynamic>{"url": url, "path": path});
     return r ?? false;
   }
 

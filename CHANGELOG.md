@@ -1,3 +1,7 @@
+## 2.0.0
+
+* Add stop listeners, multiple firebase path and Geofire version update
+
 ## 1.0.0
 
 * Remove Query Listeners Feature added
@@ -17,8 +21,3 @@
 ## 0.0.2
 
 * Implementation
-
-
-## 0.0.1
-
-* TODO: Describe initial release.

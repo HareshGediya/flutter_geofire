@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
 
     //Intializing geoFire
     //Empty url is default database
-    Geofire.initialize('', pathToReference);
+    Geofire.initialize(path: pathToReference);
 
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
